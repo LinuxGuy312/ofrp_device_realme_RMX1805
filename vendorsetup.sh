@@ -34,6 +34,8 @@ export \
        FOX_TARGET_DEVICES="RMX1805,RMX1809,RMX1811" \
        FOX_DELETE_AROMAFM=1 \
        FOX_ENABLE_APP_MANAGER=1 \
+       OF_NO_SPLASH_CHANGE=1 \
+       FOX_DELETE_MAGISK_ADDON=1 \
        OF_CLOCK_POS=1
        
 latest_tag=$(curl -s https://api.github.com/repos/topjohnwu/Magisk/releases/latest | grep "tag_name" | sed -E 's/.*"([^"]+)".*/\1/'); \
