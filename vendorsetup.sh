@@ -38,4 +38,4 @@ export \
        
 latest_tag=$(curl -s https://api.github.com/repos/topjohnwu/Magisk/releases/latest | grep "tag_name" | sed -E 's/.*"([^"]+)".*/\1/'); \
 nonv=${latest_tag:1:10};mkdir ~/Magisk;wget -O ~/Magisk/Magisk-$nonv.zip https://github.com/topjohnwu/Magisk/releases/download/$latest_tag/Magisk-$latest_tag.apk --show-progress; \
-export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-$nonv.zip
+export FOX_MAGISK_ZIP_INSTALLER=~/Magisk/Magisk-$nonv.zip
