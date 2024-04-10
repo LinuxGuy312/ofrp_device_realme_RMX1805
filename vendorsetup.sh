@@ -34,10 +34,8 @@ export \
        FOX_TARGET_DEVICES="RMX1805,RMX1809,RMX1811" \
        FOX_DELETE_AROMAFM=1 \
        FOX_ENABLE_APP_MANAGER=1 \
-       OF_ENABLE_LPTOOLS=1 \
-       OF_SPLASH_MAX_SIZE=10240 \
        OF_CLOCK_POS=1
        
 latest_tag=$(curl -s https://api.github.com/repos/topjohnwu/Magisk/releases/latest | grep "tag_name" | sed -E 's/.*"([^"]+)".*/\1/'); \
 nonv=${latest_tag:1:10};mkdir ~/Magisk;wget -O ~/Magisk/Magisk-$nonv.zip https://github.com/topjohnwu/Magisk/releases/download/$latest_tag/Magisk-$latest_tag.apk --show-progress; \
-export FOX_USE_SPECIFIC_MAGISK_ZIP="~/Magisk/Magisk-$nonv.zip"
+export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-$nonv.zip
