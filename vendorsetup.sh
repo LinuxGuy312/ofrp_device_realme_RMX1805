@@ -35,6 +35,7 @@ export \
        FOX_DELETE_AROMAFM=1 \
        FOX_ENABLE_APP_MANAGER=1 \
        OF_ENABLE_LPTOOLS=1 \
+       OF_SPLASH_MAX_SIZE=10240 \
        OF_CLOCK_POS=1
        
 latest_tag=$(curl -s https://api.github.com/repos/topjohnwu/Magisk/releases/latest | grep "tag_name" | sed -E 's/.*"([^"]+)".*/\1/'); \
